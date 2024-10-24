@@ -73,6 +73,24 @@ body {
     transition: color 0.3s ease;
 }
 
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+.navbar ul li a:hover {
+    transform: scale(1.1); /* Aumenta levemente el tamaño al pasar el cursor */
+    letter-spacing: 2px; /* Las letras se separan ligeramente */
+    color: #1abc9c; /* Cambia de color al pasar el cursor */
+}
+
+.navbar ul li a.active:hover {
+    transform: scale(1.1); 
+    letter-spacing: 2px;
+}
+
 .navbar ul li a::after {
     content: "";
     position: absolute;
@@ -135,7 +153,7 @@ body {
     line-height: 1.8;
 }
 
-/* ===== RESEÑA DEL CREADOR ===== */
+/* ===== PENSAMIENTO DE UN PIONERO ===== */
 .reseña-creador {
     background-color: #ecf0f1;
     border-left: 5px solid #1abc9c;
@@ -143,6 +161,40 @@ body {
     margin-bottom: 20px;
     font-style: italic;
 }
+
+
+/* ===== ESTILOS PARA LA SECCIÓN DE LA RESEÑA ===== */
+.contenedor-pensamiento {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombras más pronunciadas */
+    border-radius: 12px; /* Bordes más redondeados */
+    transition: transform 0.3s ease; /* Agrega una pequeña animación al contenedor */
+}
+
+/* Ajustar la imágen de "reseña" */
+.imagen-seccion img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajustes al texto de la reseña */
+.contenedor-pensamiento p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #2c3e50; /* Color más oscuro para mayor contraste */
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #f9f9f9; /* Fondo sutil para resaltar la reseña */
+    border-left: 4px solid #1abc9c; /* Barra lateral para resaltar la reseña */
+    border-radius: 6px;
+}
+
 
 /* ===== ESTILO DEL VIDEO ===== */
 .video-contenido {
